@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/queries.css" />
+  </head>
+  <body>
+    <!-- Main -->
+    <main class="flex-center">
+      <button class="dark-mode" onclick="toggleState(this)">
+        <img src="assets/images/light-mode.png" alt="" />
+      </button>
+      <h1>Age Calculator</h1>
+      <div class="container">
+        <div class="form">
+          <div class="form-control day-control">
+            <label for="day">day</label>
+            <input type="text" name="day" id="day" placeholder="dd" />
+            <p class="error-message day-required hidden">
+              This field is required
+            </p>
+            <p class="error-message day-invalid hidden">Must be a valid day</p>
+            <p class="error-message date-invalid hidden">
+              Must be a valid date
+            </p>
+          </div>
+          <div class="form-control month-control">
+            <label for="month">month</label>
+            <input type="text" name="month" id="month" placeholder="mm" />
+            <p class="error-message month-required hidden">
+              This field is required
+            </p>
+            <p class="error-message month-invalid hidden">
+              Must be a valid month
+            </p>
+          </div>
+          <div class="form-control year-control">
+            <label for="year">year</label>
+            <input type="text" name="year" id="year" placeholder="yyyy" />
+            <p class="error-message year-required hidden">
+              This field is required
+            </p>
+            <p class="error-message year-invalid hidden">
+              Must be a valid year
+            </p>
+            <p class="error-message future-date hidden">Must be in the past</p>
+            <p class="error-message past-date hidden">Must be 0 or greater</p>
+          </div>
+          <button class="submit-button">
+            <img src="assets/images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+        <div class="display">
+          <p class="display-years">
+            <span class="number-display" id="year-number-display">--</span>
+            <span id="year-word-display"> years</span>
+          </p>
+          <p class="display-months">
+            <span class="number-display" id="month-number-display">--</span>
+            <span id="month-word-display"> months</span>
+          </p>
+          <p class="display-days">
+            <span class="number-display" id="day-number-display">--</span>
+            <span id="day-word-display"> days</span>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="flex-center">
+      <span class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+      </span>
+      <span class="boxv">&boxv;</span>
+      <span class="attribution">
+        Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/josh76543210"
+          target="_blank"
+        >
+          josh76543210
+        </a>
+      </span>
+    </footer>
+    <div class="icon-attribution">
+      <span
+        >Light mode icons created by
+        <a
+          href="https://www.flaticon.com/free-icons/light-mode"
+          title="light mode icons"
+          >Freepik - Flaticon</a
+        >
+      </span>
+    </div>
+
+    <!-- JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

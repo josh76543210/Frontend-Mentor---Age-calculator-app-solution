@@ -1,0 +1,127 @@
+/**********************/
+/*     over 480px     */
+/**********************/
+@media only screen and (min-width: 30em) {
+}
+
+/**********************/
+/*     over 640px     */
+/**********************/
+@media only screen and (min-width: 45em) {
+  /* gerneral styling */
+  h1 {
+    font-size: 8.1rem;
+  }
+
+  /* Main */
+  main {
+    gap: 6rem;
+  }
+
+  .dark-mode {
+    height: 5rem;
+    width: 10rem;
+  }
+
+  /* contianer */
+  .container {
+    max-width: 80rem;
+    padding: 6rem;
+  }
+
+  /* form */
+  .form {
+    border-bottom: 0.3rem solid var(--off-white);
+    gap: 3rem;
+  }
+
+  .form-control {
+    flex: 0;
+    flex-basis: 17rem;
+  }
+
+  .form-control label {
+    font-size: 1.8rem;
+  }
+
+  .form-control input {
+    font-size: 3.2rem;
+    padding: 3rem;
+    border: 0.2rem solid var(--light-grey);
+  }
+
+  .form-control input::placeholder {
+    font-size: 3.2rem;
+  }
+
+  .error-message {
+    font-size: 1.3rem;
+  }
+
+  .form button {
+    bottom: -4.5rem;
+    right: 0;
+    height: 9rem;
+    width: 9rem;
+  }
+
+  .form button img {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  /* Display */
+  .display {
+    font-size: 9.1rem;
+  }
+}
+
+/**********************/
+/*     over 928px     */
+/**********************/
+@media only screen and (min-width: 58em) {
+}
+
+/***********************/
+/*     over 1120px     */
+/***********************/
+@media only screen and (min-width: 70em) {
+}
+
+/**********************/
+/* Very small screens */
+/*     under 368px    */
+/**********************/
+@media (max-width: 23em) {
+  /* form */
+  .form {
+    flex-direction: column;
+  }
+
+  .form-control {
+    margin: 0 auto;
+  }
+
+  .error-message {
+    font-size: 1.7rem;
+  }
+
+  /* Display */
+  .display {
+    font-size: 3rem;
+  }
+}
+
+/**********************/
+/* Footer media query */
+/**********************/
+@media (max-width: 23em) {
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .boxv {
+    display: none;
+  }
+}
