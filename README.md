@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [https://www.frontendmentor.io/solutions/age-calculator-app-7BlS5wWQpL](https://www.frontendmentor.io/solutions/age-calculator-app-7BlS5wWQpL)
+- Live Site URL: [https://josh76543210-fm-age-calculator-app.netlify.app/](https://josh76543210-fm-age-calculator-app.netlify.app/)
 
 ## My process
 
